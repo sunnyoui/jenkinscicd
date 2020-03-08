@@ -21,11 +21,14 @@
 							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
 							"});",
 							"",
-							"pm.test(\"Ensure that Devices Type is returned as Browser\", function () {",
+							"pm.test(pm.variables.get(\"nameTest\"), function () {",
 							"    var jsonData = pm.response.json();",
 							"    var actualKeyValue = jsonData.home.Devices[0];",
-							"    pm.expect(actualKeyValue).to.eql(\"Web Browser\");",
-							"});"
+							"    pm.expect(actualKeyValue).to.eql(pm.variables.get(\"value\"));",
+							"});",
+							"",
+							"",
+							""
 						],
 						"type": "text/javascript"
 					}
