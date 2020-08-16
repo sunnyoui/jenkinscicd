@@ -1,10 +1,10 @@
 [
     {
-        "nameTest": "This will be my test one",
-        "value": "Web Browser"
+        "Scenario": "Validate the platform is Web Browser",
+        "expectedValue": "Web Browser"
     },
     {
-        "nameTest": "This will be my test number 2",
-        "value": "Web Browser"
+        "Scenario": "Validate the platform is not Web Browser",
+        "expectedValue": "Web Browser"
     }
 ]
